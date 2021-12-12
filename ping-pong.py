@@ -21,19 +21,20 @@ def set_difficulty(*args):
 
     if args[1] == 3:
         speed_x = 5
-        speed_y = 5
+        speed_y = 2
         racket_height = 95
         ball_h_w = 50
     if args[1] == 2:
-        speed_x = 3
-        speed_y = 3
+        speed_x = 2
+        speed_y = 1
         racket_height = 115
         ball_h_w = 75
     if args[1] == 1:
-        speed_x = 7
+        speed_x = 10
         speed_y = 7
         racket_height = 50
         ball_h_w = 25
+
 def start_the_game():
     run = True
     game = True
@@ -43,10 +44,6 @@ def start_the_game():
 
     lost = 0
     max_lost=2
-
-
-
-
 
     #Font.init()
     font1 = font.SysFont('ComicSansMC', 50)
@@ -96,8 +93,8 @@ def start_the_game():
                 or self.rect.y < 0:
                 speed_y *= -1'''
 
-    racket = Racket("racket.png", 630, 100, racket_height, 25, 10)
-    racket2 = Racket("racket2.png", 20, 100, racket_height, 25, 10)
+    racket = Racket("racket.png", 630, 250, racket_height, 25, 10)
+    racket2 = Racket("racket2.png", 20, 250, racket_height, 25, 10)
     ball = Racket("tenis_ball.png", 350, 300, ball_h_w, ball_h_w, 3)
     while run:
         for e in event.get():
