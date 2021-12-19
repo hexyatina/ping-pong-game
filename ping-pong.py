@@ -8,7 +8,7 @@ window = display.set_mode((w_width,w_height))
 display.set_caption("ping-pong")
 clock = time.Clock()
 
-speed_x = 7
+speed_x = 9
 speed_y = 7
 
 
